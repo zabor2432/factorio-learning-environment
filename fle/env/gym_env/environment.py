@@ -1,8 +1,8 @@
 import logging
 
-import gym
+import gymnasium as gym
 import numpy as np
-from gym import spaces
+from gymnasium import spaces
 from typing import Dict, Optional, Tuple, Any
 import pickle
 import datetime
@@ -26,9 +26,6 @@ from fle.env.gym_env.observation import (
 from fle.eval.tasks import TaskABC
 
 logger = logging.getLogger(__name__)
-
-# need to do this since gym doesn't work with numpy>=2.0 otherwise.
-np.bool8 = np.dtype(np.bool)
 
 
 class AllCharText(gym.spaces.Text):

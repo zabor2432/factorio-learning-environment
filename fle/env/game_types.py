@@ -257,6 +257,7 @@ class Prototype(enum.Enum, metaclass=PrototypeMetaclass):
 
     # Power
     Substation = "substation", ent.ElectricityPole
+    ElectricEnergyInterface = "electric-energy-interface", ent.Entity
     SteamTurbine = "steam-turbine", ent.Generator
 
     # Circuit Network
